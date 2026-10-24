@@ -173,3 +173,4 @@ To add new papers to the search index:
 - **chromadb**: Persistent vector storage (for dense search)
 - **pandas**, **numpy**: Data handling"# Research-Paper-RAG" 
 "# Research-Paper-RAG" 
+"# Research-Paper-RAG" 

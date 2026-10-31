@@ -32,9 +32,9 @@ src/download_data.py
 src/config.py
 
 # Evaluation
-src/Evaluations/human_relevance_judgements.csv
-src/Evaluations/retrieval_mertrics.csv
-src/retrieval_results.csv
+src/Evaluations/retrieval_metrics.csv
+src/Evaluations/retrieval_results.csv
+src/Evaluations/human_relevance_judgments.csv
 
 
 

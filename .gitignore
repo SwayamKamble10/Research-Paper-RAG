@@ -1,0 +1,41 @@
+# Environement files
+.env
+.env.example
+
+# Testing files
+test_search.py
+
+# Doc files
+docs/
+
+# vs code
+.vscode/
+
+#venv files
+.venv/
+
+# Chroma db files created during chat and pycache docs
+src/__pycache__/
+src/chroma_db/
+
+# Datasets
+src/data/
+
+# FAISS and Embeddings during hybrid search
+src/indexes/
+
+
+# testing files
+src/rrf.py
+src/test.py
+src/download_data.py
+src/config.py
+
+# Evaluation
+src/Evaluations/human_relevance_judgements.csv
+src/Evaluations/retrieval_mertrics.csv
+src/retrieval_results.csv
+
+
+
+

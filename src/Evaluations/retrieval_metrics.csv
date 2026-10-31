@@ -1,0 +1,51 @@
+query,num_judged,relevant_in_top_k,precision_at_k,mrr_at_k,ndcg_at_k
+How can causal inference support treatment-effect estimation?,10,5,0.5,0.5,0.6748368595077732
+How can contrastive learning improve image representation?,10,6,0.6,0.3333333333333333,0.6234728940857287
+How can data poisoning attacks be detected during model training?,10,5,0.5,1.0,0.8022072946236855
+How can deep learning identify rare diseases from clinical records?,10,5,0.5,1.0,0.7814196688120711
+How can differential privacy be applied to machine-learning models?,10,5,0.5,1.0,0.9279037807882758
+How can explainable AI support financial decision-making?,10,4,0.4,1.0,0.9358362043010311
+How can federated learning protect privacy in healthcare?,10,6,0.6,1.0,0.8759144545737759
+How can graph neural networks be used for drug discovery?,10,4,0.4,0.25,0.5902801412407551
+How can graph-based methods detect financial fraud?,10,4,0.4,1.0,0.929505556553773
+How can machine learning forecast electricity demand?,10,4,0.4,0.3333333333333333,0.6075091975067315
+How can machine learning systems be made more robust to distribution shift?,10,5,0.5,0.5,0.6740394920789046
+How can models detect and mitigate bias in generated text?,10,4,0.4,1.0,0.6368287271123411
+How can models handle missing or noisy medical data?,10,2,0.2,0.3333333333333333,0.5698952960821408
+How can natural-language processing extract events from financial news?,10,2,0.2,0.5,0.6445794451249499
+How can optimization reduce emissions in transportation networks?,10,3,0.3,1.0,0.93027126882989
+How can reinforcement learning improve robotic manipulation?,10,4,0.4,1.0,0.8291326566522231
+How can robots learn tasks from human demonstrations?,10,3,0.3,0.5,0.5985264920786753
+How can satellite imagery support crop-yield prediction?,10,2,0.2,1.0,0.8391657063511034
+How can scientific-paper abstracts be used to predict research impact?,10,3,0.3,0.16666666666666666,0.6259280148755539
+How can self-supervised learning reduce the need for labeled data?,10,4,0.4,1.0,0.6852515969709263
+How can small language models perform well with limited compute?,10,3,0.3,1.0,0.7931593163731487
+How can transformer models improve long-document summarization?,10,6,0.6,1.0,0.8747290872990732
+How can uncertainty estimation make neural-network predictions more reliable?,10,3,0.3,0.2,0.4436787393605615
+How can vector databases improve semantic search over scientific papers?,10,7,0.7,1.0,0.8700196388408682
+How can vision-language models support embodied AI?,10,5,0.5,1.0,0.7431049675400551
+How can wearable sensor data be used for early disease detection?,10,3,0.3,1.0,0.5920044770883434
+How do instruction-tuning and preference optimization affect language-model behavior?,10,4,0.4,1.0,0.9462684124895359
+How does reciprocal rank fusion compare with other hybrid retrieval methods?,10,5,0.5,1.0,0.7368477969177525
+How does retrieval-augmented generation improve factual accuracy?,10,10,1.0,1.0,0.9402163867032493
+What approaches evaluate the quality of retrieved documents in a research-paper search system?,10,5,0.5,1.0,0.8953611265891364
+What are effective approaches for medical image segmentation?,10,4,0.4,0.5,0.7147452034630638
+What are effective approaches to multi-agent reinforcement learning?,10,4,0.4,1.0,0.7679019910327968
+What are effective ways to evaluate question-answering systems?,10,10,1.0,1.0,0.8400120635093734
+What are the challenges of applying machine learning to electronic health records?,10,3,0.3,1.0,0.6448442731726547
+What are the limitations of using synthetic data to train language models?,10,5,0.5,1.0,0.9243722071007044
+What are the security risks of deploying large language models with tools?,10,3,0.3,1.0,0.7453660201171523
+What are the trade-offs between vision transformers and convolutional neural networks?,10,1,0.1,0.2,0.38685280723454163
+What machine-learning approaches forecast stock-market volatility?,10,4,0.4,0.25,0.6888055876384641
+What machine-learning methods predict protein structure or function?,10,4,0.4,0.5,0.6588488318667372
+What methods defend neural networks against adversarial examples?,10,0,0.0,0.0,0.8932547230000344
+What methods detect anomalies in industrial sensor time series?,10,5,0.5,1.0,0.8550961823035497
+What methods help autonomous vehicles predict pedestrian behavior?,10,2,0.2,0.5,0.5555320989548606
+What methods improve citation recommendation for scientific articles?,10,5,0.5,0.5,0.8208166018261248
+What methods improve credit-risk prediction under class imbalance?,10,3,0.3,1.0,0.9935774939007994
+What methods improve domain adaptation when training and test data differ?,10,6,0.6,0.5,0.7767493469775948
+What methods improve interpretability of clinical prediction models?,10,4,0.4,0.5,0.667041845982982
+What methods improve reasoning in large language models?,10,7,0.7,1.0,0.8801296859169337
+What methods reduce hallucinations in large language models?,10,8,0.8,1.0,0.8192307407104572
+What models improve short-term weather forecasting?,10,2,0.2,0.3333333333333333,0.419528554682116
+What techniques improve multilingual information retrieval?,10,4,0.4,0.5,0.7414212846594348

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Search — Hybrid Academic Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <span class="logo-mark">§</span>
+                <span class="logo-text">Paper Search</span>
+            </a>
+            <nav class="nav-links">
+                <span class="nav-hint">Hybrid retrieval: BM25 + Dense vectors</span>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="search-hero">
+            <h1 class="hero-title">Find academic papers</h1>
+            <p class="hero-subtitle">Semantic and lexical search over research papers with transparent ranking</p>
+
+            <form id="search-form" class="search-form">
+                <div class="search-input-wrapper">
+                    <input
+                        type="text"
+                        id="query-input"
+                        name="query"
+                        placeholder="Search papers by topic, title, or abstract..."
+                        autocomplete="off"
+                        required
+                    >
+                    <button type="submit" class="search-button" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section id="results-section" class="results-section hidden">
+            <div class="results-header">
+                <h2 class="results-title">Results</h2>
+                <span id="results-count" class="results-count"></span>
+            </div>
+
+            <div id="results-container" class="results-container">
+                <!-- Results will be injected here -->
+            </div>
+        </section>
+
+        <div id="chat-modal" class="chat-modal hidden" role="dialog" aria-modal="true" aria-labelledby="chat-paper-title">
+            <div class="chat-modal-content">
+                <div class="chat-header">
+                    <h3 id="chat-paper-title">Paper Chat</h3>
+                    <button id="chat-close" class="chat-close-btn" type="button" aria-label="Close paper chat">&times;</button>
+                </div>
+                <div id="chat-messages" class="chat-messages" aria-live="polite"></div>
+                <div class="chat-loading hidden" id="chat-loading">
+                    <div class="loading-spinner"></div>
+                    <span>Processing paper PDF...</span>
+                </div>
+                <form id="chat-form" class="chat-input-form">
+                    <input type="text" id="chat-input" placeholder="Ask about this paper..." autocomplete="off" required>
+                    <button type="submit" id="chat-submit-btn">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <section id="empty-state" class="empty-state">
+            <div class="empty-content">
+                <div class="empty-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+                    </svg>
+                </div>
+                <p class="empty-text">Enter a query to search papers</p>
+            </div>
+        </section>
+
+        <section id="loading-state" class="loading-state hidden">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Searching...</p>
+        </section>
+
+        <section id="error-state" class="error-state hidden">
+            <div class="error-content">
+                <p id="error-message" class="error-message"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Built with BM25 lexical search and dense vector embeddings via Reciprocal Rank Fusion</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
